@@ -8,6 +8,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v1
-      - uses: bokuweb/actions-test@master
+      - uses: bokuweb/actions-test@b
         with:
           secret: "${{ secrets.GITHUB_TOKEN }}"
