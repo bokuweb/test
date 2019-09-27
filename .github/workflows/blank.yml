@@ -11,3 +11,8 @@ jobs:
       - uses: bokuweb/actions-test@b
         with:
           secret: "${{ secrets.GITHUB_TOKEN }}"
+          
+      - uses: actions/upload-artifact@master
+        with:
+          name: my-artifact
+          path: report
