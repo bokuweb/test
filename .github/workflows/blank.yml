@@ -20,4 +20,4 @@ jobs:
           secret: "${{ secrets.GITHUB_TOKEN }}"  
       - uses: actions/download-artifact@master
         with:
-        name: my-artifact
+          name: my-artifact
