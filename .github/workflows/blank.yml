@@ -7,12 +7,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v1
       - uses: bokuweb/actions-test@b
         with:
-          secret: "${{ secrets.GITHUB_TOKEN }}"
-          
+          secret: "${{ secrets.GITHUB_TOKEN }}"  
       - uses: actions/upload-artifact@master
         with:
           name: my-artifact
           path: report
+      - uses: bokuweb/actions-test@notif
+        with:
+          secret: "${{ secrets.GITHUB_TOKEN }}"  
